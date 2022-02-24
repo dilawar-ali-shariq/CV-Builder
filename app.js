@@ -52,19 +52,19 @@ simpleLogin.addEventListener('click', (e) => {
     LoginWithEmailPass(emailLogin.value,passLogin.value);
 })
 
-emailLogin.addEventListener("keypress", (e) => {
+emailLogin.addEventListener("keydown", (e) => {
     document.getElementById('email-login-label').style.display = "none"
 })
 
-passLogin.addEventListener("keypress", (e) => {
+passLogin.addEventListener("keydown", (e) => {
     document.getElementById('pass-login-label').style.display = "none"
 })
 
-emailBar.addEventListener("keypress", (e) => {
+emailBar.addEventListener("keydown", (e) => {
     document.getElementById('email-label').style.display = "none"
 })
 
-passBar.addEventListener("keypress", (e) => {
+passBar.addEventListener("keydown", (e) => {
     document.getElementById('pass-label').style.display = "none"
 })
 
