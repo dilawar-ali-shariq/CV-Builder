@@ -9,8 +9,10 @@ var simpleSignup = document.getElementById('simple-signup');
 var nameBar = document.getElementById('name');
 var emailBar = document.getElementById('email');
 var passBar = document.getElementById('pass');
+var checkBox2 = document.getElementById('check-box-2');
 var emailLogin = document.getElementById("email-login");
 var passLogin = document.getElementById("pass-login");
+var checkBox1 = document.getElementById('check-box-1');
 var simpleLogin = document.getElementById("simple-login");
 
 btnLogin.addEventListener( "click" , (e) => {
@@ -95,6 +97,7 @@ var SignUp = async (name, email, pass) => {
         nameBar.value = ""
         emailBar.value = ""
         passBar.value = ""
+        checkBox2.checked = false
     } catch (error) {
         console.log(error.code)
         if (error.code === "auth/invalid-email") {
@@ -112,6 +115,7 @@ var LoginWithEmailPass = async (email,pass) => {
         console.log(data)
         emailLogin.value = ""
         passLogin.value = ""
+        checkBox1.checked = false
     } catch (error) {
         console.log(error.code)
         if (error.code === "auth/invalid-email") {
