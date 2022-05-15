@@ -81,7 +81,7 @@ var loginWithGoogle = async () => {
     }
   
     localStorage.setItem('auth', "")
-    location.assign('./index.html')
+    location.assign('./index-cv.html')
 
     console.log(myData);
     return myData;
@@ -100,7 +100,7 @@ var SignUp = async (name, email, pass) => {
         passBar.value = ""
         checkBox2.checked = false
 
-        location.assign('./index.html')
+        location.assign('./index-cv.html')
 
     } catch (error) {
         console.log(error.code)
@@ -121,7 +121,7 @@ var LoginWithEmailPass = async (email,pass) => {
         passLogin.value = ""
         checkBox1.checked = false
 
-        location.assign('./index.html')
+        location.assign('./index-cv.html')
 
     } catch (error) {
         console.log(error.code)
