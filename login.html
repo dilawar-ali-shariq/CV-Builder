@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV-Builder</title>
+    <link rel="stylesheet" href="./login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
+
+    <script> 
+        const firebaseConfig = {
+          apiKey: "AIzaSyADEPXlwfD5SLoPFrE8bQSjHR2fdeS8dZA",
+          authDomain: "auth-practice-35aca.firebaseapp.com",
+          projectId: "auth-practice-35aca",
+          storageBucket: "auth-practice-35aca.appspot.com",
+          messagingSenderId: "490122834135",
+          appId: "1:490122834135:web:51a54e219e5a49c8a50092"
+        };
+        
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <div class="container">
+        <div id='login-form' class='login-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button id="btn-login" class='toggle-btn'>Log In</button>
+                    <button id="btn-signup" class='toggle-btn'>Sign Up</button>
+                </div>
+                <form id='login' class='input-group-login'>
+                    <input type='text' id="email-login" class='input-field'placeholder='Email Id' required >
+                    <label id="email-login-label" class="common">Enter a valid Email*</label>
+		            <input type='password' id="pass-login" class='input-field'placeholder='Enter Password' required>
+                    <label id="pass-login-label" class="common">Enter a valid Password*</label>
+                    <div class="wrapper">
+                        <input type='checkbox' id="check-box-1" class='check-box'><span>Remember Password</span>
+                    </div> 
+                    <div class="btn-holder">
+                        <button id="simple-login" class='submit-btn'>Log in</button>
+                        <button id="login-with-google" class='submit-btn'>Login with Google</button>
+                    </div>
+		        </form>
+		        <form id='signup' class='input-group-register'>
+		            <input type='text' id="name" class='input-field' placeholder='Name' required>
+		            <input type='text' id="email" class='input-field' placeholder='Email Id' required>
+                    <label id="email-label" class="common">Enter a valid Email*</label>
+		            <input type='password' id="pass" class='input-field' placeholder='Enter Password' required>
+                    <label id="pass-label" class="common">Enter a valid Password*</label>
+                    <div class="wrapper">
+                        <input type='checkbox' id="check-box-2" class='check-box'><span>I agree to the terms & conditions</span>
+                    </div>
+                    <button id="simple-signup" class='submit-btn'>Sign Up</button>
+	            </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./login.js"></script>
+</body>
+</html>

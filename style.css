@@ -1,196 +1,102 @@
-*{
-    padding: 0;
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
+body {
+    background-color: #343F56;
+    color: white;
 }
 
-.common{
-	display: none;
-	color: red;
-	font-size: 10px;
+label {
+    padding-bottom: 4px;
+    color: white;
 }
 
-.container{
-    height: 100%;
-	width: 100%;
-    font-family: 'Roboto', sans-serif;
-	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("./bg.jpg");
-	background-position: center;
-	background-size: cover;
-	position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.fa-linkedin {
+    color: white;
+    padding-right: 5px;
+    border-radius: 50%;
+    margin-bottom: .3rem;
+
 }
 
-.form-box
-{
-    width: 380px;
-	height: 500px;
-	position: relative;
-	background: rgba(0,0,0,0.3);
-	padding: 10px;
-    overflow: hidden;
+.fa:hover {
+    opacity: 0.7;
 }
 
-.button-box
-{
-	width: 220px;
-	margin: 35px auto;
-	position: relative;
-	box-shadow: 0 0 20px 9px #ff61241f;
-	border-radius: 30px;
+
+.fa-rss {
+    background: #ff6600;
+    color: white;
+    padding: .4rem;
+    border-radius: 20%;
+    margin-bottom: .3rem;
 }
 
-.toggle-btn
-{
-	padding: 10px 30px;
-	cursor: pointer;
-	background: transparent;
-	border: 0;
-	outline: none;
-	position: relative;
+.fa-github {
+
+    margin-bottom: .3rem;
+    font-size: 1.2rem;
 }
 
-#btn
-{
-	top: 0;
-	left: 0;
-	position: absolute;
-	width: 110px;
-	height: 100%;
-	background: #F3C693;
-	border-radius: 30px;
-	transition: .5s;
+.github {
+    margin-top: 8px;
 }
 
-.input-group-login
-{
-	top: 150;
-	position: absolute;
-	width: 280px;
-	transition: .5s;
+.profile {
+    border-radius: 50%;
 }
 
-.input-group-register
-{
-    top: 120;
-	position: absolute;
-	width: 280px;
-	transition: .5s;
+#cv-template {
+    display: none;
 }
 
-.input-field
-{
-    display: block;
-	width: 100%;
-	padding: 10px 0;
-	margin: 5px 0;
-	border-left: 0;
-	border-top: 0;
-	border-right: 0;
-	border-bottom: 1px solid #999;
-	outline: none;
-	background: transparent;
+a {
+    text-decoration: none;
+    color: white;
 }
 
-.btn-holder{
-    margin: 10px;
+a:hover {
+    color: yellow;
 }
 
-.submit-btn
-{
-	width: 85%;
-	padding: 10px 30px;
-	cursor: pointer;
-	display: block;
-	margin: auto;
-	background: #F3C693;
-	border: 0;
-	outline: none;
-	border-radius: 30px;
+.background-left {
+    background-color: #EE5253;
 }
 
-#login-with-google{
-    margin-top: 40px;
-    width: 100%;
+
+.defaultAvatar {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
 }
 
-.check-box
-{
-	margin: 30px 10px 34px 0;
-}
-
-span
-{
-	color: #777;
-	font-size: 12px;
-	position: relative;
-    bottom: 2px;
-}
-
-#login
-{
-	left: 50px;
-}
-
-#login input
-{
-	color: white;
-	font-size: 15;
-}
-
-#signup
-{
-	left: 450px;
-}
-
-#signup input
-{
-	color: white;
-	font-size: 15;
-}
-
-@media only screen and (max-width:500px){
-
-    .form-box{
-        width: 300px;
+@media print {
+    body {
+        background: none;
+        background-color: none;
     }
 
-    .input-field{
-        width: 75%;
+    .container {
+
+        width: 6.5in;
+        height: 9in;
+        padding: 0;
+        margin: 0;
+
+
     }
 
-    .submit-btn{
-        position: relative;
-        right: 35px;
-        width: 65%;
+    .printbtn {
+        display: none;
     }
 
-    #login-with-google{
-        width: 80%;
-    }
-}
-
-@media only screen and (max-width:400px){
-
-    .toggle-btn{
-        padding: 8px 30px;
+    .badge-pill {
+        border: none !important;
+        box-shadow: none !important;
+        outline: none !important;
     }
 
-    .form-box{
-        width: 280px;
-        height: 450px;
-    }
 
-    .input-field{
-        width: 65%;
-    }
 
-    .submit-btn{
-        width: 55%;
-        right: 50px;
-        padding: 8px 15px;
-    }
+
+
+
+
 }
